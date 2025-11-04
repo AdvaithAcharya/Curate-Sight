@@ -1,0 +1,12 @@
+# Warp Workflows for CurateSight
+workflows:
+  - name: dev-frontend
+    command: npm --prefix frontend run dev
+  - name: dev-backend
+    command: npm --prefix backend run dev
+  - name: dev
+    command: npm run dev
+  - name: seed
+    command: npm --prefix backend run seed
+  - name: build-frontend
+    command: npm --prefix frontend run build
